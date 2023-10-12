@@ -1,0 +1,34 @@
+{
+    "name": "Clocker",
+    "description": "Just a clock that shows up when you're in fullscreen mode!!",
+    
+    "version": "1.0",
+    
+    "action": {
+        "default_title": "Add / Remove Clock"
+    },
+
+    "options_ui": {
+        "page": "./options/options.html",
+        "open_in_tab": false
+      },
+
+    "background": {
+        "service_worker": "background.js"
+    },
+
+    "permissions": [
+        "contextMenus",
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+
+    "icons": {
+        "16": "/assets/clock.png",
+        "48": "/assets/clock.png",
+        "128": "/assets/clock.png"
+    },
+
+    "manifest_version": 3
+}
